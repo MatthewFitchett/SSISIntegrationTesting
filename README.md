@@ -1,6 +1,6 @@
 # SSISIntegrationTesting
 
-This project gives an example of how to go about writing an automated test around an SSIS package.  The database is often the place where a lot of mocking is used in application testing as it can be hard to write good repeatable tests around it.  The reason for this is that often there are only a few living instances of a database (dev, qa, prod) and everyone just crams there changes into.  Normally they are not kept in source control and so are hard to know what state they are in at any one time.  
+This project gives an example of how to go about writing an automated test around an SSIS package.  The database is often the place where a lot of mocking is used in application testing as it can be hard to write good repeatable tests around it.  The reason for this is that often there are only a few living instances of a database (dev, qa, prod) and everyone just crams their changes into.  Normally they are not kept in source control and so are hard to know what state they are in at any one time.  
 
 By pulling your database into source control and being able to build it as part of a test solves a number of problems:
   *) You can write full stack integration tests that include your database (no mocks needed which are often brittle and are tightly coupled to the implementation)
